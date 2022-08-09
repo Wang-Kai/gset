@@ -1,0 +1,2 @@
+# gset
+Set for golang
