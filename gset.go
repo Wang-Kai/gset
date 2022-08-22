@@ -10,6 +10,10 @@ func NewStrSet() *StrSet {
 	}
 }
 
+func (s *StrSet) Has(item string) bool {
+	return s.data[item]
+}
+
 func (s *StrSet) Add(items ...string) *StrSet {
 	for ix := range items {
 		s.data[items[ix]] = true
@@ -49,6 +53,10 @@ func NewInt64Set() *Int64Set {
 	return &Int64Set{
 		data: make(map[int64]bool),
 	}
+}
+
+func (s *Int64Set) Has(item int64) bool {
+	return s.data[item]
 }
 
 func (s *Int64Set) Add(items ...int64) *Int64Set {
