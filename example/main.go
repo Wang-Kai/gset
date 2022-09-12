@@ -1,9 +1,3 @@
-# gset
-Set for golang
-
-# Get started
-
-```go
 package main
 
 import (
@@ -19,4 +13,3 @@ func main() {
 	}
 	fmt.Printf("There are %d host", set.Len())
 }
-```
