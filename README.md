@@ -15,7 +15,7 @@ import (
 func main() {
 	set := gset.NewStrSet().Add("hostname1", "hostname1", "hostname2")
 	if !set.Has("hostname3") {
-		println("The hostname2 dose not exist")
+		println("The hostname3 dose not exist")
 	}
 	fmt.Printf("There are %d host", set.Len())
 }
